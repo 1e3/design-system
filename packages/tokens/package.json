@@ -1,0 +1,29 @@
+{
+  "name": "@1e3/tokens",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Rafael Franco <rafaelfr@outlook.com>",
+  "homepage": "https://github.com/1e3/design-system#readme",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1e3/design-system.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "bugs": {
+    "url": "https://github.com/1e3/design-system/issues"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "rollup": "^1.31.0",
+    "rollup-plugin-babel": "^4.3.3"
+  }
+}

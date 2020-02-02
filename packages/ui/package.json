@@ -1,0 +1,36 @@
+{
+  "name": "@1e3/ui",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Rafael Franco <rafaelfr@outlook.com>",
+  "homepage": "https://github.com/1e3/design-system#readme",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1e3/design-system.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "dependencies": {
+    "@1e3/tokens": "^0.0.0",
+    "@xstyled/styled-components": "^1.15.1",
+    "babel-plugin-styled-components": "^1.10.7",
+    "polished": "^3.4.4",
+    "styled-components": "^5.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "@rollup/plugin-node-resolve": "^7.1.0",
+    "react": "^16.12.0",
+    "rollup": "^1.30.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.2.0"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "@1e3/design-system",
+  "private": true,
+  "scripts": {
+    "dev": "lerna run dev --stream --parallel",
+    "release": "lerna publish --yes --conventional-commits"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
