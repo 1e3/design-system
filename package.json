@@ -2,6 +2,7 @@
   "name": "@1e3/design-system",
   "private": true,
   "scripts": {
+    "build": "lerna run build",
     "dev": "lerna run --parallel dev",
     "release": "lerna publish --yes --conventional-commits"
   },

@@ -20,7 +20,9 @@ jobs:
         with:
           node-version: 12
       - name: Install dependencies
-        run: yarn
+        run: yarn lerna bootstrap
+      - name: Build
+        run: yarn build
       - name: Publish
         run: |
           NPM_TOKEN=${NPM_TOKEN}
