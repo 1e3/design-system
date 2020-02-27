@@ -6,6 +6,26 @@ on:
       - master
 
 jobs:
+  check-changes:
+    name: Check changes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Check changes
+        uses: netlify/actions/diff-includes@master
+        with:
+          args: packages
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: check-changes
+    steps:
+      - name: Deploy
+        uses: netlify/actions/build@master
+        env:
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
   release:
     runs-on: ubuntu-latest
     steps:
