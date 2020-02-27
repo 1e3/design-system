@@ -4,7 +4,7 @@
   "description": "1e3 design tokens definitions",
   "author": "Rafael Franco <rafaelfr@outlook.com>",
   "homepage": "https://github.com/1e3/design-system#readme",
-  "license": "ISC",
+  "license": "MIT",
   "main": "dist/index.js",
   "files": [
     "dist"
@@ -15,11 +15,20 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w"
+    "dev": "rollup -c -w",
+    "lint": "eslint . --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.4",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-1e3": "^0.1.23",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1",
     "rollup": "^1.31.0",
     "rollup-plugin-babel": "^4.3.3"
   }

@@ -1,0 +1,6 @@
+{
+  "extends": "1e3-react",
+  "rules": {
+    "react/jsx-props-no-spreading": 0
+  }
+}

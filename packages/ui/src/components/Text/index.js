@@ -1,8 +1,8 @@
 import styled, { css } from '@xstyled/styled-components'
 import { system } from '@xstyled/system'
 
-const Heading = styled.h1(({ theme: { components: { heading } } }) => {
-  const { font } = heading
+const Text = styled.p(({ theme: { components: { text } } }) => {
+  const { font } = text
 
   return css`
       font-family: '${font.family}', sans-serif;
@@ -10,8 +10,8 @@ const Heading = styled.h1(({ theme: { components: { heading } } }) => {
     `
 }, system)
 
-Heading.propTypes = {}
+Text.propTypes = {}
 
-Heading.defaultProps = {}
+Text.defaultProps = {}
 
-export default Heading
+export default Text

@@ -12,6 +12,6 @@
 
 ## License
 
-ISC License at [LICENSE.md]
+MIT License at [LICENSE.md]
 
 [LICENSE.md]: ./LICENSE.md

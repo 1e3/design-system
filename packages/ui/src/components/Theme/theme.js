@@ -1,5 +1,6 @@
 import tokens from '@1e3/tokens'
 
+import { button, heading, text } from './components'
 import generateColors from '../../utils/generateColors'
 
 const {
@@ -17,8 +18,14 @@ const colors = {
   white,
 }
 
-const [bodyFontFamily, headingFontFamily] = fonts
+const [textFontFamily, headingFontFamily] = fonts
 
-const theme = { colors, fonts: { bodyFontFamily, headingFontFamily } }
+const theme = { colors, fonts: { textFontFamily, headingFontFamily } }
 
-export default theme
+const components = {
+  button: button(theme),
+  heading: heading(theme),
+  text: text(theme),
+}
+
+export default { ...theme, components }

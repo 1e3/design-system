@@ -4,14 +4,7 @@ import { terser } from 'rollup-plugin-terser'
 
 const plugins = [babel({ exclude: 'node_modules/**' }), nodeResolve(), terser()]
 
-const external = [
-  'polished',
-  'prop-types',
-  '@xstyled/styled-components',
-  'react',
-  'react-dom',
-  'styled-components',
-]
+const external = ['polished', 'prop-types', 'react', 'react-dom', 'styled-components']
 
 export default [
   {
