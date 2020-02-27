@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  packages:
+  release:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -20,7 +20,7 @@ jobs:
         with:
           node-version: 12
       - name: Install dependencies
-        run: yarn lerna bootstrap
+        run: yarn
       - name: Build
         run: yarn build
       - name: Publish
