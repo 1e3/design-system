@@ -5,7 +5,7 @@
     "build": "lerna run build",
     "dev": "lerna run --parallel dev",
     "release": "lerna publish --yes",
-    "build:docs": "lerna run build --scope=@1e3/docs --stream"
+    "build:docs": "lerna run build --scope=@1e3/docs --stream; sleep 120; false"
   },
   "devDependencies": {
     "lerna": "^3.20.2"
