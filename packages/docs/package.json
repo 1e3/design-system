@@ -1,6 +1,6 @@
 {
   "name": "@1e3/docs",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "1e3 design system documentation",
   "author": "Rafael Franco <rafaelfr@outlook.com>",
   "private": true,
@@ -16,7 +16,7 @@
     "build": "gatsby build"
   },
   "dependencies": {
-    "@1e3/ui": "^0.1.17",
+    "@1e3/ui": "^0.1.18",
     "@mdx-js/mdx": "^1.4.0",
     "@mdx-js/react": "^1.4.0",
     "@mdx-js/tag": "^0.20.3",
