@@ -3,7 +3,6 @@
   "private": true,
   "scripts": {
     "build": "lerna run build",
-    "build:docs": "lerna run --scope @1e3/docs build",
     "dev": "lerna run --parallel dev",
     "release": "lerna publish --yes --conventional-commits"
   },
