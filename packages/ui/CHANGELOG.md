@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.15 (2020-02-28)
+
+
+### Bug Fixes
+
+* add font-smoothing to GlobalStyle ([62b4ed5](https://github.com/1e3/design-system/commit/62b4ed50bb83ee1f81625fc9694e159d61332335))
+
+
+
+
+
 ## 0.1.14 (2020-02-28)
 
 **Note:** Version bump only for package @1e3/ui

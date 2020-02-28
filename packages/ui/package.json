@@ -1,6 +1,6 @@
 {
   "name": "@1e3/ui",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "description": "1e3 component library",
   "author": "Rafael Franco <rafaelfr@outlook.com>",
   "homepage": "https://github.com/1e3/design-system#readme",
@@ -19,7 +19,7 @@
     "lint": "eslint . --fix"
   },
   "dependencies": {
-    "@1e3/tokens": "^0.1.14",
+    "@1e3/tokens": "^0.1.15",
     "@xstyled/styled-components": "^1.16.0",
     "@xstyled/system": "^1.15.1",
     "polished": "^3.4.4",
