@@ -17,7 +17,7 @@ jobs:
         with:
           node-version: 12.x
       - run: yarn
-      - run: yarn build:docs
+      - run: yarn build
       - uses: netlify/actions/cli@master
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
