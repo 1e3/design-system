@@ -1,6 +1,6 @@
 {
   "name": "@1e3/docs",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "1e3 design system documentation",
   "author": "Rafael Franco <rafaelfr@outlook.com>",
   "private": true,
@@ -20,7 +20,7 @@
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
   },
   "dependencies": {
-    "@1e3/ui": "^0.1.13",
+    "@1e3/ui": "^0.1.14",
     "@mdx-js/mdx": "^1.4.0",
     "@mdx-js/react": "^1.4.0",
     "@mdx-js/tag": "^0.20.3",
