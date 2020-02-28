@@ -5,8 +5,8 @@ on:
     branches:
       - master
     paths:
-      - packages/tokens
-      - packages/ui
+      - "packages/tokens/**"
+      - "packages/ui/**"
 
 jobs:
   release:
