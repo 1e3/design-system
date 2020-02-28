@@ -1,6 +1,7 @@
 {
   "version": "independent",
   "npmClient": "yarn",
+  "useWorkspaces": true,
   "command": {
     "publish": {
       "conventionalCommits": true
@@ -10,6 +11,5 @@
       "createRelease": "github",
       "message": "chore: release"
     }
-  },
-  "useWorkspaces": true
+  }
 }
