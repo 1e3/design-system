@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.18](https://github.com/1e3/design-system/compare/@1e3/docs@0.0.17...@1e3/docs@0.0.18) (2020-02-28)
+
+**Note:** Version bump only for package @1e3/docs
+
+
+
+
+
 ## 0.0.17 (2020-02-28)
 
 **Note:** Version bump only for package @1e3/docs
