@@ -29,13 +29,6 @@ jobs:
         run: yarn build
       - name: Bump
         run: |
-          yarn lerna version --yes
+          yarn lerna version --no-git-tag-version --no-push --yes
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Publish
-        run: |
-          NPM_TOKEN=${NPM_TOKEN}
-          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
-          yarn lerna publish from-package
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
