@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.2.0 (2020-02-29)
+
+
+### Features
+
+* export styled ([47de196](https://github.com/1e3/design-system/commit/47de196159f3fd9c346618739ab6f9090fa85387))
+
+
+
+
+
 ## 0.1.18 (2020-02-28)
 
 **Note:** Version bump only for package @1e3/ui
