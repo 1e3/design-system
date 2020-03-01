@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.2.1](https://github.com/1e3/design-system/compare/@1e3/ui@0.2.0...@1e3/ui@0.2.1) (2020-03-01)
+
+
+### Bug Fixes
+
+* export all from xstyled ([3eaf3f3](https://github.com/1e3/design-system/commit/3eaf3f38036c254fa39b7dc88f5d332c2efe8e12))
+
+
+
+
+
 # 0.2.0 (2020-02-29)
 
 
