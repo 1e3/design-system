@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.0.0](https://github.com/1e3/ui/compare/@1e3/docs@0.0.20...@1e3/docs@1.0.0) (2020-03-08)
+
+
+### Features
+
+* simplify @1e3/ui package api ([7d3c3f3](https://github.com/1e3/ui/commit/7d3c3f345afceff87f3c10331341b2a07a556e10))
+
+
+### BREAKING CHANGES
+
+* api changed completely
+
+
+
+
+
 ## [0.0.20](https://github.com/1e3/ui/compare/@1e3/docs@0.0.19...@1e3/docs@0.0.20) (2020-03-01)
 
 **Note:** Version bump only for package @1e3/docs

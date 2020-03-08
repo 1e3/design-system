@@ -1,6 +1,6 @@
 {
   "name": "@1e3/docs",
-  "version": "0.0.20",
+  "version": "1.0.0",
   "description": "1e3 UI components documentation",
   "author": "Rafael Franco <rafaelfr@outlook.com>",
   "private": true,
@@ -15,7 +15,7 @@
     "build": "gatsby build"
   },
   "dependencies": {
-    "@1e3/ui": "^0.2.1",
+    "@1e3/ui": "^1.0.0",
     "@mdx-js/mdx": "^1.4.0",
     "@mdx-js/react": "^1.4.0",
     "@mdx-js/tag": "^0.20.3",
