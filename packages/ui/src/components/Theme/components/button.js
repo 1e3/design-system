@@ -1,24 +1,25 @@
-const button = ({ colors, fonts }) => ({
+const button = ({ colors, fonts, scale }) => ({
   background: {
     color: colors.primary.base,
   },
   border: {
     style: 'solid',
-    width: 1,
+    width: scale(0.125),
   },
   box: {
-    shadow: '0 0 0 2px',
+    shadow: `0 0 0 ${scale(0.25)}`,
   },
   color: colors.primary.contrast,
   font: {
-    family: fonts.headingFontFamily,
-    size: 3,
+    family: fonts.heading,
+    size: scale(1.5),
   },
+  letterSpacing: scale(0.125),
   padding: {
-    top: 2,
-    right: 4,
-    bottom: 2,
-    left: 4,
+    top: scale(1),
+    right: scale(2),
+    bottom: scale(1),
+    left: scale(2),
   },
 })
 

@@ -3,7 +3,7 @@ import { LiveProvider, LiveError, LivePreview } from 'react-live'
 import { preToCodeBlock } from 'mdx-utils'
 import { MDXContext } from '@mdx-js/react'
 import githubTheme from 'prism-react-renderer/themes/github'
-import styled, { css } from '@xstyled/styled-components'
+import styled, { css } from 'styled-components'
 import PrismHighlight from './PrismHighlight'
 
 const Preview = styled.div(
@@ -23,11 +23,15 @@ const Preview = styled.div(
 )
 
 const Component = styled.div(
-  () => css`
+  ({ theme: { scale } }) => css`
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 4;
+    padding: ${scale(2)};
+
+    > div {
+      width: 100%;
+    }
   `,
 )
 
@@ -35,12 +39,13 @@ const Error = styled(LiveError)(
   ({
     theme: {
       colors: { danger },
+      scale,
     },
   }) => css`
     background-color: ${danger.light};
     color: ${danger.base};
     margin: 0;
-    padding: 4;
+    padding: ${scale(2)};
   `,
 )
 

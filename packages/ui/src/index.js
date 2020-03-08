@@ -1,12 +1,9 @@
-import { ThemeProvider, theme } from './components/Theme'
+import { ThemeProvider } from './components/Theme'
 import Box from './components/Box'
 import Button from './components/Button'
-import Col from './components/Col'
+import Column from './components/Column'
+import Grid from './components/Grid'
 import Heading from './components/Heading'
-import Row from './components/Row'
 import Text from './components/Text'
 
-export * from '@xstyled/styled-components'
-export { default } from '@xstyled/styled-components'
-
-export { ThemeProvider, theme, Box, Button, Col, Heading, Row, Text }
+export { ThemeProvider, Box, Button, Column, Grid, Heading, Text }

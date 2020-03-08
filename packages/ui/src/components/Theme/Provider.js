@@ -1,30 +1,41 @@
 import React from 'react'
-import { node, shape } from 'prop-types'
-import { ThemeProvider } from '@xstyled/styled-components'
+import { node, objectOf, shape, string } from 'prop-types'
+import { ThemeProvider } from 'styled-components'
 import ReactFontLoader from 'react-font-loader'
 
 import GlobalStyle from './GlobalStyle'
-import defaultTheme from './theme'
+import { generateTheme } from './theme'
 
-const Provider = ({ children, theme }) => (
-  <>
-    <ThemeProvider theme={theme}>
+const Provider = ({ children, theme }) => {
+  const generatedTheme = generateTheme(theme)
+
+  return (
+    <ThemeProvider theme={generatedTheme}>
       <ReactFontLoader
-        fonts={[{ name: theme.fonts.textFontFamily }, { name: theme.fonts.headingFontFamily }]}
+        fonts={[
+          { name: generatedTheme.fonts.body },
+          { name: generatedTheme.fonts.heading, weight: [700] },
+        ]}
       />
-      <GlobalStyle fontFamily={theme.fonts.textFontFamily} />
+      <GlobalStyle fontFamily={generatedTheme.fonts.body} />
       {children}
     </ThemeProvider>
-  </>
-)
+  )
+}
 
 Provider.propTypes = {
   children: node.isRequired,
-  theme: shape({}),
+  theme: shape({
+    colors: objectOf(string),
+    fonts: shape({
+      body: string,
+      heading: string,
+    }),
+  }),
 }
 
 Provider.defaultProps = {
-  theme: defaultTheme,
+  theme: {},
 }
 
 export default Provider

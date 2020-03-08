@@ -1,7 +1,7 @@
-const text = ({ fonts }) => ({
+const text = ({ fonts, scale }) => ({
   font: {
-    family: fonts.textFontFamily,
-    size: 3,
+    family: fonts.body,
+    size: scale(3),
   },
 })
 

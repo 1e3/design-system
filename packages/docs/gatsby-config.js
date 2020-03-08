@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `1e3 Design System documentation`,
+    title: `1e3 UI components documentation`,
     author: `Rafael Franco`,
-    description: `1e3 design system documentation`,
-    siteUrl: `https://1e3.dev/design-system`,
+    description: `1e3 UI components documentation`,
+    siteUrl: `https://1e3.dev/ui`,
     social: {
       twitter: `rfoel`,
     },
@@ -50,8 +50,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `1e3 Design System documentation`,
-        short_name: `1e3 Design System`,
+        name: `1e3 UI documentation`,
+        short_name: `1e3 UI`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#1e31e3`,

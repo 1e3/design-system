@@ -1,31 +1,41 @@
-import tokens from '@1e3/tokens'
-
 import { button, heading, text } from './components'
-import generateColors from '../../utils/generateColors'
+import { generateColors, scale } from '../../utils'
 
-const {
-  colors: { black, blue, gray, green, red, white, yellow },
-  fonts,
-} = tokens
-
-const colors = {
-  black,
-  danger: generateColors(red),
-  primary: generateColors(blue),
-  success: generateColors(green),
-  warning: generateColors(yellow),
-  gray: generateColors(gray),
-  white,
+const defaultColors = {
+  black: '#000000',
+  blue: `#1e31e3`,
+  gray: '#e7e7e7',
+  green: '#00af7c',
+  red: '#c91630',
+  white: '#ffffff',
+  yellow: '#eec200',
 }
 
-const [textFontFamily, headingFontFamily] = fonts
+const defaultFonts = { body: 'Source Sans Pro', heading: 'Red Hat Display' }
 
-const theme = { colors, fonts: { textFontFamily, headingFontFamily } }
+export const generateTheme = ({ colors = {}, fonts = {} }) => {
+  const mergedColors = { ...defaultColors, ...colors }
+  const mergedFonts = { ...defaultFonts, ...fonts }
 
-const components = {
-  button: button(theme),
-  heading: heading(theme),
-  text: text(theme),
+  const { black, blue, gray, green, red, yellow, white } = mergedColors
+
+  const themeColors = {
+    black,
+    danger: generateColors(red),
+    gray: generateColors(gray),
+    primary: generateColors(blue),
+    success: generateColors(green),
+    warning: generateColors(yellow),
+    white,
+  }
+
+  const theme = { colors: themeColors, fonts: mergedFonts, scale }
+
+  const components = {
+    button: button(theme),
+    heading: heading(theme),
+    text: text(theme),
+  }
+
+  return { ...theme, components }
 }
-
-export default { ...theme, components }

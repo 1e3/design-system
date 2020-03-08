@@ -1,17 +1,33 @@
-import styled, { css } from '@xstyled/styled-components'
-import { system } from '@xstyled/system'
+import { number, string } from 'prop-types'
+import styled, { css } from 'styled-components'
 
-const Heading = styled.h1(({ theme: { components: { heading } } }) => {
-  const { font } = heading
+import Box from '../Box'
 
-  return css`
+const Heading = styled(Box).attrs(({ as }) => ({ as }))(
+  ({
+    fontSize,
+    theme: {
+      components: { heading },
+      scale,
+    },
+  }) => {
+    const { font } = heading
+
+    return css`
       font-family: '${font.family}', sans-serif;
-      font-size: ${font.size};
+      font-size: ${scale(fontSize || font.family.size)};
     `
-}, system)
+  },
+)
 
-Heading.propTypes = {}
+Heading.propTypes = {
+  as: string,
+  fontSize: number,
+}
 
-Heading.defaultProps = {}
+Heading.defaultProps = {
+  as: 'h1',
+  fontSize: null,
+}
 
 export default Heading

@@ -1,18 +1,17 @@
 {
   "name": "@1e3/docs",
   "version": "0.0.20",
-  "description": "1e3 design system documentation",
+  "description": "1e3 UI components documentation",
   "author": "Rafael Franco <rafaelfr@outlook.com>",
   "private": true,
-  "homepage": "https://github.com/1e3/design-system#readme",
+  "homepage": "https://github.com/1e3/ui#readme",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/1e3/design-system.git"
+    "url": "git+https://github.com/1e3/ui.git"
   },
   "scripts": {
-    "dev": "gatsby develop",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "build": "gatsby build"
   },
   "dependencies": {
@@ -20,7 +19,6 @@
     "@mdx-js/mdx": "^1.4.0",
     "@mdx-js/react": "^1.4.0",
     "@mdx-js/tag": "^0.20.3",
-    "@xstyled/styled-components": "^1.16.0",
     "gatsby": "^2.14.4",
     "gatsby-image": "^2.0.22",
     "gatsby-plugin-manifest": "^2.0.5",

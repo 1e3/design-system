@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import styled, { ThemeContext, css } from '@xstyled/styled-components'
+import styled, { ThemeContext, css } from 'styled-components'
 import { Box, Heading, Text } from '@1e3/ui'
 
 const Circle = styled.div(

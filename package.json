@@ -1,9 +1,8 @@
 {
-  "name": "@1e3/design-system",
   "private": true,
   "scripts": {
     "build": "lerna run build --ignore=@1e3/docs --stream",
-    "dev": "lerna run --parallel dev"
+    "start": "lerna run --parallel --stream start"
   },
   "devDependencies": {
     "lerna": "^3.20.2"

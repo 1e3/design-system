@@ -1,18 +1,10 @@
 import React from 'react'
 import { arrayOf, node, shape } from 'prop-types'
-import styled, { css } from '@xstyled/styled-components'
+import styled, { css } from 'styled-components'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import { ThemeProvider } from '@1e3/ui'
+import { Column, Grid, ThemeProvider } from '@1e3/ui'
 
 import Navigation from './Navigation'
-
-const StyledLayout = styled.div(
-  ({ theme }) =>
-    css`
-      display: flex;
-      min-height: 100vh;
-    `,
-)
 
 const Main = styled.main(
   ({
@@ -31,12 +23,16 @@ const Main = styled.main(
 const Layout = ({ body, nav }) => {
   return (
     <ThemeProvider>
-      <StyledLayout>
-        <Navigation items={nav} />
-        <Main>
-          <MDXRenderer>{body}</MDXRenderer>
-        </Main>
-      </StyledLayout>
+      <Grid columns="auto 1fr">
+        <Column>
+          <Navigation items={nav} />
+        </Column>
+        <Column>
+          <Main>
+            <MDXRenderer>{body}</MDXRenderer>
+          </Main>
+        </Column>
+      </Grid>
     </ThemeProvider>
   )
 }

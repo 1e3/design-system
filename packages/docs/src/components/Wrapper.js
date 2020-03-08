@@ -11,7 +11,7 @@ const { Heading } = components
 
 const customComponents = {
   h1: Heading,
-  h2: ({ children }) => <Heading fontSize={5}>{children}</Heading>,
+  h2: ({ children }) => <Heading>{children}</Heading>,
   pre: CodeBlock,
   Colors,
   PropsTable,

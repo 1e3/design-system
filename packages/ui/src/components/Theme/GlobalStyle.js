@@ -1,4 +1,4 @@
-import { createGlobalStyle, css } from '@xstyled/styled-components'
+import { createGlobalStyle, css } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   ${({ fontFamily }) => css`

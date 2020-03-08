@@ -1,17 +1,29 @@
-import styled, { css } from '@xstyled/styled-components'
-import { system } from '@xstyled/system'
+import { string } from 'prop-types'
+import styled, { css } from 'styled-components'
 
-const Text = styled.p(({ theme: { components: { text } } }) => {
-  const { font } = text
+import Box from '../Box'
 
-  return css`
+const Text = styled(Box).attrs(({ as }) => ({ as }))(
+  ({
+    theme: {
+      components: { text },
+    },
+  }) => {
+    const { font } = text
+
+    return css`
       font-family: '${font.family}', sans-serif;
       font-size: ${font.size};
     `
-}, system)
+  },
+)
 
-Text.propTypes = {}
+Text.propTypes = {
+  as: string,
+}
 
-Text.defaultProps = {}
+Text.defaultProps = {
+  as: 'p',
+}
 
 export default Text

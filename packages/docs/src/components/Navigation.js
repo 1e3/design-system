@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css } from '@xstyled/styled-components'
+import styled, { css } from 'styled-components'
 import { Link } from 'gatsby'
 
 const Nav = styled.div(

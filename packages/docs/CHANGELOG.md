@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.0.20](https://github.com/1e3/design-system/compare/@1e3/docs@0.0.19...@1e3/docs@0.0.20) (2020-03-01)
+## [0.0.20](https://github.com/1e3/ui/compare/@1e3/docs@0.0.19...@1e3/docs@0.0.20) (2020-03-01)
 
 **Note:** Version bump only for package @1e3/docs
 
@@ -11,7 +11,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [0.0.19](https://github.com/1e3/design-system/compare/@1e3/docs@0.0.18...@1e3/docs@0.0.19) (2020-02-29)
+## [0.0.19](https://github.com/1e3/ui/compare/@1e3/docs@0.0.18...@1e3/docs@0.0.19) (2020-02-29)
 
 **Note:** Version bump only for package @1e3/docs
 
@@ -19,7 +19,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
-## [0.0.18](https://github.com/1e3/design-system/compare/@1e3/docs@0.0.17...@1e3/docs@0.0.18) (2020-02-28)
+## [0.0.18](https://github.com/1e3/ui/compare/@1e3/docs@0.0.17...@1e3/docs@0.0.18) (2020-02-28)
 
 **Note:** Version bump only for package @1e3/docs
 
@@ -56,7 +56,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ### Bug Fixes
 
-* add font-smoothing to GlobalStyle ([62b4ed5](https://github.com/1e3/design-system/commit/62b4ed50bb83ee1f81625fc9694e159d61332335))
+* add font-smoothing to GlobalStyle ([62b4ed5](https://github.com/1e3/ui/commit/62b4ed50bb83ee1f81625fc9694e159d61332335))
 
 
 

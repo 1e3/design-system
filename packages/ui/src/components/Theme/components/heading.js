@@ -1,7 +1,7 @@
-const heading = ({ fonts }) => ({
+const heading = ({ fonts, scale }) => ({
   font: {
-    family: fonts.headingFontFamily,
-    size: 6,
+    family: fonts.heading,
+    size: scale(4),
   },
 })
 
