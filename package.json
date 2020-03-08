@@ -2,6 +2,7 @@
   "private": true,
   "scripts": {
     "build": "lerna run build --ignore=@1e3/docs --stream",
+    "build:docs": "lerna run build --scope=@1e3/docs --stream",
     "start": "lerna run --parallel --stream start"
   },
   "devDependencies": {
