@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/1e3/ui/compare/@1e3/docs@1.0.0...@1e3/docs@1.0.1) (2020-03-09)
+
+
+### Bug Fixes
+
+* generate any color from theme colors ([3ed90c8](https://github.com/1e3/ui/commit/3ed90c8864b536ee7a62e1fe7183f197f6fda0ef))
+
+
+
+
+
 # [1.0.0](https://github.com/1e3/ui/compare/@1e3/docs@0.0.20...@1e3/docs@1.0.0) (2020-03-08)
 
 
