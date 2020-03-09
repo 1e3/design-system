@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/1e3/ui/compare/@1e3/ui@1.0.1...@1e3/ui@1.0.2) (2020-03-09)
+
+
+### Bug Fixes
+
+* set text font-size to 16px ([910fdb1](https://github.com/1e3/ui/commit/910fdb13ebb19ac7e5668781aadf10aa0cc7c9f0))
+
+
+
+
+
 ## [1.0.1](https://github.com/1e3/ui/compare/@1e3/ui@1.0.0...@1e3/ui@1.0.1) (2020-03-09)
 
 

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.2](https://github.com/1e3/ui/compare/@1e3/docs@1.0.1...@1e3/docs@1.0.2) (2020-03-09)
+
+**Note:** Version bump only for package @1e3/docs
+
+
+
+
+
 ## [1.0.1](https://github.com/1e3/ui/compare/@1e3/docs@1.0.0...@1e3/docs@1.0.1) (2020-03-09)
 
 
