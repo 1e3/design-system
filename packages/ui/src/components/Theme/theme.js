@@ -22,8 +22,6 @@ export const generateTheme = ({ colors = {}, fonts = {} }) => {
     {},
   )
 
-  console.log(generatedColors)
-
   const themeColors = {
     black: '#000000',
     white: '#ffffff',
