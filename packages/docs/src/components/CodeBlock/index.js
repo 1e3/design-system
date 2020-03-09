@@ -38,12 +38,12 @@ const Component = styled.div(
 const Error = styled(LiveError)(
   ({
     theme: {
-      colors: { danger },
+      colors: { red },
       scale,
     },
   }) => css`
-    background-color: ${danger.light};
-    color: ${danger.base};
+    background-color: ${red.light};
+    color: ${red.base};
     margin: 0;
     padding: ${scale(2)};
   `,

@@ -63,7 +63,7 @@ const Color = ({ color, name }) => {
 
 const Colors = () => {
   const {
-    colors: { black, danger, gray, primary, success, warning, white },
+    colors: { black, blue, gray, green, primary, red, yellow, white },
   } = useContext(ThemeContext)
 
   return (
@@ -86,9 +86,10 @@ const Colors = () => {
         Secondary palette
       </Heading>
       <Box row mx={-2}>
-        <Color color={success} name="success" />
-        <Color color={warning} name="warning" />
-        <Color color={danger} name="danger" />
+        <Color color={blue} name="blue" />
+        <Color color={green} name="green" />
+        <Color color={red} name="red" />
+        <Color color={yellow} name="yellow" />
       </Box>
     </Box>
   )
