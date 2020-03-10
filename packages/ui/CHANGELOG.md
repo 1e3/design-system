@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/1e3/ui/compare/@1e3/ui@1.0.2...@1e3/ui@1.1.0) (2020-03-10)
+
+
+### Features
+
+* add input component ([35ffe7a](https://github.com/1e3/ui/commit/35ffe7a62494280f945ca1dcdd4b89583a49ff6e))
+
+
+
+
+
 ## [1.0.2](https://github.com/1e3/ui/compare/@1e3/ui@1.0.1...@1e3/ui@1.0.2) (2020-03-09)
 
 
