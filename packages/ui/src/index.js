@@ -4,6 +4,7 @@ import Button from './components/Button'
 import Column from './components/Column'
 import Grid from './components/Grid'
 import Heading from './components/Heading'
+import Input from './components/Input'
 import Text from './components/Text'
 
-export { ThemeProvider, Box, Button, Column, Grid, Heading, Text }
+export { ThemeProvider, Box, Button, Column, Grid, Heading, Input, Text }
