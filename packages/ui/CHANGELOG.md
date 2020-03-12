@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.3](https://github.com/1e3/ui/compare/@1e3/ui@1.1.2...@1e3/ui@1.1.3) (2020-03-12)
+
+
+### Bug Fixes
+
+* don't use postinstall when publishing ([12609cf](https://github.com/1e3/ui/commit/12609cf00a2b322c8b3a33aba9951cd8fa7c5b4c))
+
+
+
+
+
 ## [1.1.2](https://github.com/1e3/ui/compare/@1e3/ui@1.1.1...@1e3/ui@1.1.2) (2020-03-12)
 
 **Note:** Version bump only for package @1e3/ui
