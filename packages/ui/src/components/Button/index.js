@@ -5,8 +5,9 @@ import { darken, lighten, transparentize } from 'polished'
 
 import Box from '../Box'
 
-const StyledButton = styled(Box).attrs({ as: 'button' })(
+const StyledButton = styled(Box)(
   ({
+    full,
     inverted,
     outline,
     theme: {
@@ -31,6 +32,7 @@ const StyledButton = styled(Box).attrs({ as: 'button' })(
       letter-spacing: ${scale(0.125)};
       outline: none;
       padding: ${scale(1)} ${scale(2)};
+      width: ${full ? '100%' : 'auto'};
 
       :hover {
         background-color: ${lighten(0.05, main)};
@@ -70,19 +72,21 @@ const StyledButton = styled(Box).attrs({ as: 'button' })(
   },
 )
 
-const Button = ({ children, inverted, outline }) => (
-  <StyledButton inverted={inverted} outline={outline}>
+const Button = ({ children, full, inverted, outline }) => (
+  <StyledButton as="button" full={full} inverted={inverted} outline={outline}>
     {children}
   </StyledButton>
 )
 
 Button.propTypes = {
+  full: bool,
   children: node.isRequired,
   inverted: bool,
   outline: bool,
 }
 
 Button.defaultProps = {
+  full: false,
   inverted: false,
   outline: false,
 }
