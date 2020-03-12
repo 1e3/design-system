@@ -15,8 +15,7 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "start": "rollup -c -w",
-    "postinstall": "yarn build"
+    "start": "rollup -c -w"
   },
   "peerDependencies": {
     "styled-components": ">= 5.0.0"
