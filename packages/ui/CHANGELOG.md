@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.5](https://github.com/1e3/ui/compare/@1e3/ui@1.1.4...@1e3/ui@1.1.5) (2020-03-12)
+
+
+### Bug Fixes
+
+* spread props for input ([5ffa957](https://github.com/1e3/ui/commit/5ffa95700e1e6fc81fada9d12ebb9b2fc78e806d))
+
+
+
+
+
 ## [1.1.4](https://github.com/1e3/ui/compare/@1e3/ui@1.1.3...@1e3/ui@1.1.4) (2020-03-12)
 
 
