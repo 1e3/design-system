@@ -72,8 +72,8 @@ const StyledButton = styled(Box)(
   },
 )
 
-const Button = ({ children, full, inverted, outline }) => (
-  <StyledButton as="button" full={full} inverted={inverted} outline={outline}>
+const Button = ({ children, full, inverted, outline, ...props }) => (
+  <StyledButton as="button" full={full} inverted={inverted} outline={outline} {...props}>
     {children}
   </StyledButton>
 )

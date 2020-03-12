@@ -20,8 +20,8 @@ const StyledGrid = styled(Box)(
     `,
 )
 
-const Grid = ({ children, columns, gap }) => (
-  <StyledGrid columns={columns} gap={gap}>
+const Grid = ({ children, columns, gap, ...props }) => (
+  <StyledGrid columns={columns} gap={gap} {...props}>
     {children}
   </StyledGrid>
 )

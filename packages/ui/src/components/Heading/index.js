@@ -11,8 +11,8 @@ const StyledHeading = styled(Box)(
     `,
 )
 
-const Heading = ({ as, children, fontSize }) => (
-  <StyledHeading as={as} fontSize={fontSize}>
+const Heading = ({ as, children, fontSize, ...props }) => (
+  <StyledHeading as={as} fontSize={fontSize} {...props}>
     {children}
   </StyledHeading>
 )

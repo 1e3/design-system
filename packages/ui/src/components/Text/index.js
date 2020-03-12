@@ -11,8 +11,8 @@ const StyledText = styled(Box)(
     `,
 )
 
-const Text = ({ as, children, fontSize }) => (
-  <StyledText as={as} fontSize={fontSize}>
+const Text = ({ as, children, fontSize, ...props }) => (
+  <StyledText as={as} fontSize={fontSize} {...props}>
     {children}
   </StyledText>
 )

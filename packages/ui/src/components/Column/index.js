@@ -20,8 +20,8 @@ const StyledColumn = styled(Box)(
   `,
 )
 
-const Column = ({ children, span, start }) => (
-  <StyledColumn span={span} start={start}>
+const Column = ({ children, span, start, ...props }) => (
+  <StyledColumn span={span} start={start} {...props}>
     {children}
   </StyledColumn>
 )
