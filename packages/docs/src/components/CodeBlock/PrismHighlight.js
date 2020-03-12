@@ -11,9 +11,19 @@ const defaultPropsWithTheme = {
 }
 
 const Pre = styled.pre(
-  ({ theme: { scale } }) => css`
+  ({
+    theme: {
+      colors: { gray },
+      scale,
+    },
+  }) => css`
     margin: 0;
     padding: ${scale(2)};
+    background-color: ${gray.light} !important;
+
+    * {
+      background-color: ${gray.light} !important;
+    }
   `,
 )
 

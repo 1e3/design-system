@@ -1,63 +1,68 @@
-import { bool } from 'prop-types'
+import React from 'react'
+import { bool, node } from 'prop-types'
 import styled, { css } from 'styled-components'
 import { darken, lighten, transparentize } from 'polished'
 
 import Box from '../Box'
 
-const Button = styled(Box).attrs({ as: 'button' })(
+const StyledButton = styled(Box).attrs({ as: 'button' })(
   ({
+    inverted,
     outline,
     theme: {
-      components: { button },
+      colors: { primary, white },
+      fonts,
+      scale,
     },
   }) => {
-    const { background, border, box, color, font, letterSpacing, padding } = button
+    const main = inverted ? white : primary.base
+    const contrast = inverted ? primary.base : white
 
     return css`
-      background-color: ${background.color};
+      background-color: ${main};
       border: none;
-      border-color: ${background.color};
-      border-style: ${border.style};
-      border-width: ${border.width};
-      color: ${color};
+      border-color: ${main};
+      border-style: solid;
+      border-width: ${scale(0.125)};
+      color: ${contrast};
       cursor: pointer;
-      font-family: ${font.family};
-      font-size: ${font.size};
-      letter-spacing: ${letterSpacing};
+      font-family: ${fonts.heading};
+      font-size: ${scale(2)};
+      letter-spacing: ${scale(0.125)};
       outline: none;
-      padding: ${padding.top} ${padding.right} ${padding.bottom} ${padding.left};
+      padding: ${scale(1)} ${scale(2)};
 
       :hover {
-        background-color: ${lighten(0.05, background.color)};
-        border-color: ${lighten(0.05, background.color)};
+        background-color: ${lighten(0.05, main)};
+        border-color: ${lighten(0.05, main)};
       }
 
       :active {
-        background-color: ${darken(0.1, background.color)};
-        border-color: ${darken(0.1, background.color)};
-        box-shadow: ${box.shadow} ${transparentize(0.8, background.color)};
+        background-color: ${darken(0.1, main)};
+        border-color: ${darken(0.1, main)};
+        box-shadow: 0 0 0 ${scale(0.4)} ${transparentize(0.8, main)};
       }
 
       :focus {
-        box-shadow: ${box.shadow} ${transparentize(0.8, background.color)};
+        box-shadow: 0 0 0 ${scale(0.4)} ${transparentize(0.8, main)};
       }
 
       ${outline
         ? css`
-            color: ${background.color};
+            color: ${main};
             background-color: transparent;
 
             :hover {
-              background-color: ${transparentize(0.8, background.color)};
+              background-color: ${transparentize(0.8, main)};
             }
 
             :active {
-              background-color: ${transparentize(0.7, background.color)};
-              box-shadow: ${box.shadow} ${transparentize(0.6, background.color)};
+              background-color: ${transparentize(0.7, main)};
+              box-shadow: 0 0 0 ${scale(0.4)} ${transparentize(0.6, main)};
             }
 
             :focus {
-              box-shadow: ${box.shadow} ${transparentize(0.6, background.color)};
+              box-shadow: 0 0 0 ${scale(0.4)} ${transparentize(0.6, main)};
             }
           `
         : ''}
@@ -65,12 +70,23 @@ const Button = styled(Box).attrs({ as: 'button' })(
   },
 )
 
+const Button = ({ children, inverted, outline }) => (
+  <StyledButton inverted={inverted} outline={outline}>
+    {children}
+  </StyledButton>
+)
+
 Button.propTypes = {
+  children: node.isRequired,
+  inverted: bool,
   outline: bool,
 }
 
 Button.defaultProps = {
+  inverted: false,
   outline: false,
 }
+
+Button.displayName = 'Button'
 
 export default Button

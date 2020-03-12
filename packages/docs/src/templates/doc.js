@@ -1,18 +1,34 @@
 import React from 'react'
+import { shape, node } from 'prop-types'
 import { graphql } from 'gatsby'
-import { ThemeProvider } from '@1e3/ui'
 
 import Layout from '../components/Layout'
 
 const Template = props => {
-  const {
-    data: {
-      mdx: { body },
-      allMdx: { edges },
-    },
-  } = props
+  const { data, children } = props
 
-  return <Layout body={body} nav={edges} />
+  if (!data) {
+    return children
+  }
+
+  const {
+    mdx: { body },
+    allMdx: { edges },
+  } = data
+
+  const nav = edges.filter(edge => edge.node.frontmatter.title)
+
+  return <Layout body={body} nav={nav} />
+}
+
+Template.propTypes = {
+  children: node,
+  data: shape({}),
+}
+
+Template.defaultProps = {
+  children: null,
+  data: null,
 }
 
 export default Template

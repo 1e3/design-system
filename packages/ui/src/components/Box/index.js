@@ -1,10 +1,11 @@
-import { bool } from 'prop-types'
+import React from 'react'
+import { bool, node } from 'prop-types'
 import styled, { css } from 'styled-components'
 import { transparentize } from 'polished'
 
 import space from '../../utils/space'
 
-const Box = styled.div(
+const StyledBox = styled.div(
   ({ debug, theme: { colors } }) => css`
     ${debug
       ? css`
@@ -15,12 +16,21 @@ const Box = styled.div(
   space,
 )
 
+const Box = ({ children, debug, ...props }) => (
+  <StyledBox debug={debug} {...props}>
+    {children}
+  </StyledBox>
+)
+
 Box.propTypes = {
+  children: node.isRequired,
   debug: bool,
 }
 
 Box.defaultProps = {
   debug: false,
 }
+
+Box.displayName = 'Box'
 
 export default Box

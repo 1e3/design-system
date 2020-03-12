@@ -1,5 +1,5 @@
 import React from 'react'
-import { string, func } from 'prop-types'
+import { bool, func, string } from 'prop-types'
 import styled, { css } from 'styled-components'
 import { transparentize } from 'polished'
 
@@ -7,78 +7,80 @@ import Text from '../Text'
 
 const Label = styled.label(
   ({
+    inverted,
     theme: {
-      colors: { gray, primary },
-      components: {
-        input: { label },
-      },
+      colors: { black, primary, white },
+      scale,
     },
   }) => {
-    const { font } = label
+    const main = inverted ? white : black
+    const contrast = inverted ? white : primary.base
 
     return css`
       display: flex;
       flex-direction: column;
-      font-family: '${font.family}', sans-serif;
-      font-size: ${font.family.size};
+      font-size: ${scale(2)};
+      color: ${main};
 
       :focus-within {
-        color: ${primary.base};
+        color: ${contrast};
       }
 
       ${Text} {
-        color: ${gray.dark};
-      }
-`
-  },
-)
-
-const Field = styled.input(
-  ({
-    theme: {
-      colors: { primary },
-      components: { input },
-    },
-  }) => {
-    const { border, box, font, margin, padding, placeholder } = input
-
-    return css`
-      border-color: ${border.color};
-      border-style: ${border.style};
-      border-width: ${border.width};
-      font-size: ${font.size};
-      margin-bottom: ${margin.bottom};
-      margin-top: ${margin.top};
-      outline: none;
-      padding: ${padding.top} ${padding.right} ${padding.bottom} ${padding.left};
-
-      :active {
-        border-color: ${primary.base};
-        box-shadow: ${box.shadow} ${transparentize(0.8, primary.base)};
-      }
-
-      :focus {
-        border-color: ${primary.base};
-        box-shadow: ${box.shadow} ${transparentize(0.8, primary.base)};
-      }
-
-      ::placeholder {
-        color: ${placeholder.color};
+        color: ${transparentize(0.5, main)};
+        font-size: ${scale(1.5)};
       }
     `
   },
 )
 
-const Input = ({ hint, label, onChange, placeholder, type }) => (
-  <Label>
+const Field = styled.input(
+  ({
+    inverted,
+    theme: {
+      colors: { black, primary, white },
+      scale,
+    },
+  }) => {
+    const main = inverted ? white : black
+    const contrast = inverted ? white : primary.base
+
+    return css`
+      background-color: transparent;
+      border-color: ${main};
+      border-style: solid;
+      border-width: ${scale(0.125)};
+      color: ${main};
+      font-size: ${scale(2)};
+      margin-bottom: ${scale(0.5)};
+      margin-top: ${scale(0.5)};
+      outline: none;
+      padding: ${scale(1)};
+
+      :active,
+      :focus {
+        border-color: ${contrast};
+        box-shadow: 0 0 0 ${scale(0.4)} ${transparentize(0.8, contrast)};
+      }
+
+      ::placeholder {
+        color: ${transparentize(0.8, main)};
+      }
+    `
+  },
+)
+
+const Input = ({ hint, inverted, label, onChange, placeholder, type }) => (
+  <Label inverted={inverted}>
     {label && label}
-    <Field onChange={onChange} placeholder={placeholder} type={type} />
-    {hint && <Text fontSize={1.5}>{hint}</Text>}
+    <Field inverted={inverted} onChange={onChange} placeholder={placeholder} type={type} />
+    {hint && <Text>{hint}</Text>}
   </Label>
 )
 
 Input.propTypes = {
   hint: string,
+  inverted: bool,
   label: string,
   onChange: func,
   placeholder: string,
@@ -86,11 +88,14 @@ Input.propTypes = {
 }
 
 Input.defaultProps = {
-  hint: '',
-  label: '',
+  hint: null,
+  inverted: false,
+  label: null,
   onChange: null,
-  placeholder: '',
+  placeholder: null,
   type: 'text',
 }
+
+Input.displayName = 'Input'
 
 export default Input

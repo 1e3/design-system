@@ -1,16 +1,17 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 import { Link } from 'gatsby'
+import { arrayOf, shape } from 'prop-types'
 
 const Nav = styled.div(
-  ({ theme }) => css`
+  () => css`
     min-width: 250px;
     padding: 5 4;
   `,
 )
 
 const NavItem = styled.div(
-  ({ theme }) => css`
+  () => css`
     min-width: 250px;
     padding: 2 3;
   `,
@@ -29,6 +30,10 @@ const Navigation = ({ items }) => {
       })}
     </Nav>
   )
+}
+
+Navigation.propTypes = {
+  items: arrayOf(shape({})).isRequired,
 }
 
 export default Navigation

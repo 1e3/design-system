@@ -1,4 +1,3 @@
-import { button, heading, input, text } from './components'
 import { generateColors, scale } from '../../utils'
 
 const defaultColors = {
@@ -28,14 +27,5 @@ export const generateTheme = ({ colors = {}, fonts = {} }) => {
     ...generatedColors,
   }
 
-  const theme = { colors: themeColors, fonts: mergedFonts, scale }
-
-  const components = {
-    button: button(theme),
-    heading: heading(theme),
-    input: input(theme),
-    text: text(theme),
-  }
-
-  return { ...theme, components }
+  return { colors: themeColors, fonts: mergedFonts, scale }
 }

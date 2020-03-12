@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { LiveProvider, LiveError, LivePreview } from 'react-live'
 import { preToCodeBlock } from 'mdx-utils'
 import { MDXContext } from '@mdx-js/react'
@@ -23,7 +23,13 @@ const Preview = styled.div(
 )
 
 const Component = styled.div(
-  ({ theme: { scale } }) => css`
+  ({
+    inverted,
+    theme: {
+      colors: { primary },
+      scale,
+    },
+  }) => css`
     align-items: center;
     display: flex;
     justify-content: center;
@@ -32,6 +38,12 @@ const Component = styled.div(
     > div {
       width: 100%;
     }
+
+    ${inverted
+      ? css`
+          background-color: ${primary.base};
+        `
+      : ''}
   `,
 )
 
@@ -50,15 +62,17 @@ const Error = styled(LiveError)(
 )
 
 const CodeBlock = props => {
+  const [inverted, setInverted] = useState(false)
   const code = preToCodeBlock(props)
 
   return (
     <>
       <MDXContext.Consumer>
         {scope => (
-          <LiveProvider code={code.codeString} scope={scope} theme={githubTheme}>
+          <LiveProvider code={code.codeString} scope={{ ...scope, inverted }} theme={githubTheme}>
             <Preview>
-              <Component>
+              <input type="checkbox" onChange={() => setInverted(!inverted)} />
+              <Component inverted={inverted}>
                 <LivePreview />
               </Component>
               <PrismHighlight code={code.codeString} liveEditor />
