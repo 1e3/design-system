@@ -70,10 +70,16 @@ const Field = styled.input(
   },
 )
 
-const Input = ({ hint, inverted, label, onChange, placeholder, type }) => (
+const Input = ({ hint, inverted, label, onChange, placeholder, type, ...props }) => (
   <Label inverted={inverted}>
     {label && label}
-    <Field inverted={inverted} onChange={onChange} placeholder={placeholder} type={type} />
+    <Field
+      inverted={inverted}
+      onChange={onChange}
+      placeholder={placeholder}
+      type={type}
+      {...props}
+    />
     {hint && <Text>{hint}</Text>}
   </Label>
 )
