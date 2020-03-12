@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/1e3/ui/compare/@1e3/ui@1.1.5...@1e3/ui@1.2.0) (2020-03-12)
+
+
+### Features
+
+* add full prop to button ([579207e](https://github.com/1e3/ui/commit/579207e0c6cd773dcbad0405304f4e63131c63ab))
+
+
+
+
+
 ## [1.1.5](https://github.com/1e3/ui/compare/@1e3/ui@1.1.4...@1e3/ui@1.1.5) (2020-03-12)
 
 
