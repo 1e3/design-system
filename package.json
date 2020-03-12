@@ -1,8 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "lerna run build --ignore=@1e3/docs --stream",
-    "build:docs": "lerna run build --scope=@1e3/docs --stream",
+    "build": "lerna run --stream build",
     "start": "lerna run --parallel --stream start",
     "lint": "eslint . --fix --ignore-path .gitignore",
     "format": "prettier 'packages/**' --write --ignore-path .gitignore"

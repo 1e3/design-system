@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "postinstall": "yarn build"
   },
   "dependencies": {
     "@1e3/ui": "^1.1.1",
