@@ -26,7 +26,7 @@ const Label = styled.label(
         color: ${contrast};
       }
 
-      ${Text} {
+      > p {
         color: ${transparentize(0.5, main)};
         font-size: ${scale(1.5)};
       }
