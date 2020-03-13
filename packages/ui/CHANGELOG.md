@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/1e3/ui/compare/@1e3/ui@1.2.1...@1e3/ui@1.2.2) (2020-03-13)
+
+
+### Bug Fixes
+
+* add forwardRef to input ([9880b46](https://github.com/1e3/ui/commit/9880b462684b88f1fa0d6e0401a6a2aa459e6d62))
+
+
+
+
+
 ## [1.2.1](https://github.com/1e3/ui/compare/@1e3/ui@1.2.0...@1e3/ui@1.2.1) (2020-03-12)
 
 
