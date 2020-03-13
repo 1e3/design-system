@@ -21,7 +21,7 @@ const Pre = styled.pre(
     padding: ${scale(2)};
     background-color: ${gray.light} !important;
 
-    * {
+    textarea {
       background-color: ${gray.light} !important;
     }
   `,

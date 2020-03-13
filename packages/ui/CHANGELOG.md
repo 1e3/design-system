@@ -5,77 +5,43 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.2.2](https://github.com/1e3/ui/compare/@1e3/ui@1.2.1...@1e3/ui@1.2.2) (2020-03-13)
 
-
 ### Bug Fixes
 
-* add forwardRef to input ([9880b46](https://github.com/1e3/ui/commit/9880b462684b88f1fa0d6e0401a6a2aa459e6d62))
-
-
-
-
+- add forwardRef to input ([9880b46](https://github.com/1e3/ui/commit/9880b462684b88f1fa0d6e0401a6a2aa459e6d62))
 
 ## [1.2.1](https://github.com/1e3/ui/compare/@1e3/ui@1.2.0...@1e3/ui@1.2.1) (2020-03-12)
 
-
 ### Bug Fixes
 
-* spread props down ([693f4cf](https://github.com/1e3/ui/commit/693f4cf942d2f587a0b8ebbd99314515dd2e783a))
-
-
-
-
+- spread props down ([693f4cf](https://github.com/1e3/ui/commit/693f4cf942d2f587a0b8ebbd99314515dd2e783a))
 
 # [1.2.0](https://github.com/1e3/ui/compare/@1e3/ui@1.1.5...@1e3/ui@1.2.0) (2020-03-12)
 
-
 ### Features
 
-* add full prop to button ([579207e](https://github.com/1e3/ui/commit/579207e0c6cd773dcbad0405304f4e63131c63ab))
-
-
-
-
+- add full prop to button ([579207e](https://github.com/1e3/ui/commit/579207e0c6cd773dcbad0405304f4e63131c63ab))
 
 ## [1.1.5](https://github.com/1e3/ui/compare/@1e3/ui@1.1.4...@1e3/ui@1.1.5) (2020-03-12)
 
-
 ### Bug Fixes
 
-* spread props for input ([5ffa957](https://github.com/1e3/ui/commit/5ffa95700e1e6fc81fada9d12ebb9b2fc78e806d))
-
-
-
-
+- spread props for input ([5ffa957](https://github.com/1e3/ui/commit/5ffa95700e1e6fc81fada9d12ebb9b2fc78e806d))
 
 ## [1.1.4](https://github.com/1e3/ui/compare/@1e3/ui@1.1.3...@1e3/ui@1.1.4) (2020-03-12)
 
-
 ### Bug Fixes
 
-* don't interpolate Text inside Input ([e1b0c64](https://github.com/1e3/ui/commit/e1b0c644531f5133ccb483399872b42ddecb2dcf))
-
-
-
-
+- don't interpolate Text inside Input ([e1b0c64](https://github.com/1e3/ui/commit/e1b0c644531f5133ccb483399872b42ddecb2dcf))
 
 ## [1.1.3](https://github.com/1e3/ui/compare/@1e3/ui@1.1.2...@1e3/ui@1.1.3) (2020-03-12)
 
-
 ### Bug Fixes
 
-* don't use postinstall when publishing ([12609cf](https://github.com/1e3/ui/commit/12609cf00a2b322c8b3a33aba9951cd8fa7c5b4c))
-
-
-
-
+- don't use postinstall when publishing ([12609cf](https://github.com/1e3/ui/commit/12609cf00a2b322c8b3a33aba9951cd8fa7c5b4c))
 
 ## [1.1.2](https://github.com/1e3/ui/compare/@1e3/ui@1.1.1...@1e3/ui@1.1.2) (2020-03-12)
 
 **Note:** Version bump only for package @1e3/ui
-
-
-
-
 
 ## [1.1.1](https://github.com/1e3/ui/compare/@1e3/ui@1.1.0...@1e3/ui@1.1.1) (2020-03-12)
 
