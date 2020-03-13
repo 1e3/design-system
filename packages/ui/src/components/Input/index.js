@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import { bool, func, string } from 'prop-types'
 import styled, { css } from 'styled-components'
 import { transparentize } from 'polished'
@@ -70,18 +70,21 @@ const Field = styled.input(
   },
 )
 
-const Input = ({ hint, inverted, label, onChange, placeholder, type, ...props }) => (
-  <Label inverted={inverted}>
-    {label && label}
-    <Field
-      inverted={inverted}
-      onChange={onChange}
-      placeholder={placeholder}
-      type={type}
-      {...props}
-    />
-    {hint && <Text>{hint}</Text>}
-  </Label>
+const Input = forwardRef(
+  ({ hint, inverted, label, onChange, placeholder, type, ...props }, ref) => (
+    <Label inverted={inverted}>
+      {label && label}
+      <Field
+        inverted={inverted}
+        onChange={onChange}
+        placeholder={placeholder}
+        ref={ref}
+        type={type}
+        {...props}
+      />
+      {hint && <Text>{hint}</Text>}
+    </Label>
+  ),
 )
 
 Input.propTypes = {
