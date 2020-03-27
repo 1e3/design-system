@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/1e3/ui/compare/@1e3/ui@1.3.0...@1e3/ui@1.4.0) (2020-03-27)
+
+
+### Features
+
+* add inputmode to input ([74b361c](https://github.com/1e3/ui/commit/74b361cb5d6bf031a3fb44d6b659cba27dc78454))
+
+
+
+
+
 # [1.3.0](https://github.com/1e3/ui/compare/@1e3/ui@1.2.2...@1e3/ui@1.3.0) (2020-03-13)
 
 
