@@ -71,10 +71,11 @@ const Field = styled.input(
 )
 
 const Input = forwardRef(
-  ({ hint, inverted, label, onChange, placeholder, type, ...props }, ref) => (
+  ({ hint, inputmode, inverted, label, onChange, placeholder, type, ...props }, ref) => (
     <Label inverted={inverted}>
       {label && label}
       <Field
+        inputmode={inputmode}
         inverted={inverted}
         onChange={onChange}
         placeholder={placeholder}
@@ -89,6 +90,7 @@ const Input = forwardRef(
 
 Input.propTypes = {
   hint: string,
+  inputmode: string,
   inverted: bool,
   label: string,
   onChange: func,
@@ -98,6 +100,7 @@ Input.propTypes = {
 
 Input.defaultProps = {
   hint: null,
+  inputmode: 'text',
   inverted: false,
   label: null,
   onChange: null,
